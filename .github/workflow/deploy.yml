@@ -45,9 +45,9 @@
             script: |
               set -e
               cd ~
-              rm -rf express-test/
-              unzip -o app.zip -d express-test
-              cd express-test
+              rm -rf backend/
+              unzip -o app.zip -d backend
+              cd backend
 
               cat <<EOF> .env
               MONGO_URI= '${{ secrets.MONGO_URI }}'
