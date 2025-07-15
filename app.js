@@ -12,7 +12,7 @@ const app = express();
 app.use(cookieParser());
 
 app.use(cors({
-  origin: "https://api.boss-team.site", // ✅ frontend port
+  origin: "https://boss-team.site", // ✅ frontend port
   credentials: true               // ✅ allow cookies
 }));
 app.use(express.json());
