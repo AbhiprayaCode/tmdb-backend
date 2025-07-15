@@ -12,7 +12,7 @@ const app = express();
 app.use(cookieParser());
 
 app.use(cors({
-  origin: "https://tmdb-boss.netlify.app", // ✅ frontend port
+  origin: "https://api.boss-team.site", // ✅ frontend port
   credentials: true               // ✅ allow cookies
 }));
 app.use(express.json());
