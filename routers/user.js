@@ -142,7 +142,7 @@ router.post('/signup', async (req, res) => {
       isVerified: false,
     });
 
-    const verifyLink = `${process.env.URL}/auth/signup/${verificationCode}`;
+    const verifyLink = `https://boss-team.site/auth/signup/${verificationCode}`;
 
     await transporter.sendMail({
       from: process.env.EMAIL,
@@ -157,7 +157,7 @@ router.post('/signup', async (req, res) => {
       user,
     });
   } catch (error) {
-    console.error('❌ Signup error:', error); // <== ADD THIS
+    console.error('❌ Signup error:', error); 
     res.status(500).json({
       success: false,
       message: error.message || 'Signup failed',
@@ -240,7 +240,7 @@ router.get("/login/google/callback",
   sameSite: 'Lax',
   secure: false, // change to true if on HTTPS
 });
-                res.redirect('http://localhost:5173');
+                res.redirect('https://boss-team.site/');
             } else {
                 res.json({message: 'Login failed'})
             }

@@ -44,7 +44,7 @@ const jwtOption = {
 const googleOption = {
     clientID: process.env.GOOGLE_CLIENT_ID,
     clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    callbackURL: 'http://localhost:8080/auth/login/google/callback'
+    callbackURL: 'https://boss-team.site/auth/login/google/callback'
 }
 
 
